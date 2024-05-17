@@ -1,0 +1,343 @@
+/* PHONE STYLE*/
+@media (max-width: 768px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+/* COMPUTER STYLE*/
+@media (min-width: 769px){
+    :root {
+        --lpurple: #8576FF;
+        --dpurple: #5f57c4;
+        --lblue: #7BC9FF;
+        --textColor: #84d6e0;
+        --secondTextColor: #2a5aa1;
+        --errorText: black(200, 80, 80);
+    }
+
+    #mainContainer {
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+
+    .mainContainer {
+        background-color: var(--lblue);
+        padding: 15px 0 50px 0;
+        align-items: center;
+    }
+
+    body {
+        background-color: var(--lpurple);
+        margin: 0;
+    }
+
+    #logUsernameLabel, #logPasswordLabel, 
+    #registerUsernameLabel, #registerPasswordLabel, 
+    #register2PasswordLabel, #register1PasswordLabel {
+        color: var(--textColor);
+        font-size: 27px;
+        font-family: arial;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    div#logInDiv {
+        display: block;
+        position: absolute;
+        margin: 10% 0 0 19%;
+        background-color: var(--dpurple);
+        padding: 60px;
+        border-radius: 40px;
+    }
+
+    #togglePasswordImg, #toggle1PasswordImg,
+    #toggle2PasswordImg {
+        margin: 9px 0px 0 0;
+        position: absolute;
+        width: 30px;
+        right: 125px;
+        cursor: pointer;
+    }
+
+    div#registerDiv {
+        display: none;
+        position: absolute;
+        margin: 10% 0 0 27%;
+        background-color: var(--dpurple);
+        padding: 70px;
+        border-radius: 40px;
+    }
+
+    #logPasswordLabel, #logInPassword, 
+    #logUsernameLabel, #logInUsername, 
+    #registerUsername, #registerPassword,
+    #register1Password {
+        position: relative;
+        margin: 10px 0 15px 0;
+    }
+
+    #logInUsername, #logInPassword, 
+    #registerUsername, #registerPassword, 
+    #register1Password {
+        height: 22px;
+        width: 310px;
+    }
+
+    #logInPassword, #registerPassword, 
+    #register1Password {
+        width: 280px;
+        padding-right: 30px;
+    }
+
+    #btnToRegister {
+        margin: 0 0 0 0;
+    }
+
+    #makeNewUser, #btnToRegister, 
+    #btnToLogIn, #btnToShowLogIn, 
+    #btnShowLogIn{
+        font-size: 17px;
+        font-weight: 600;
+        padding: 5px;
+        color: var(--textColor);
+        background-color: var(--lpurple);
+        border: var(--lblue) 3px solid;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #errorText, #errorText1, #errorText2, 
+    #errorText3, #errorText4 {
+        color: var(--errorText);
+        margin-top: -9px;
+        display: none;
+    }
+
+
+    /* MAIN PAGE NAVIGATION*/
+    div#mainNavigation {
+        background-color: var(--dpurple);
+        width: 800px;
+        display: flex;
+        margin: 20px 0 0 16.5%;
+    }
+
+    img#mainLogo {
+        width: 50px;
+        margin: 15% 0 0 40px;
+    }
+
+    li#navBtn, a#navBtn {
+        list-style: none;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 17px;
+        font-size: 26px;
+        color: var(--textColor);
+    }
+
+    hr#navLine {
+        background-color: var(--lpurple);
+        height: 20px;
+        width: 1000px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    div#sideBtns {
+        position: absolute;
+        background-color: var(--dpurple);
+        width: 83px;
+        top: 0;
+        z-index: 0;
+    }
+
+    div#profileIconDiv {
+        margin: 24px 0 -5px 9px;
+        padding: 6px;
+    }
+
+    div#settingsIconDiv {
+        margin: 0px 0 0 4px;
+        padding: 6px;
+    }
+
+    img#profileIcon {
+        width: 50px;
+        cursor: pointer;
+    }
+
+    img#settingsIcon {
+        margin-left: 3px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    /* SETTINGS */
+
+    #settings {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 999;
+    }
+
+    img#settingsMainLogo {
+        position: absolute;
+        width: 80px;
+        margin: 20px;
+    }
+
+    p#settingsLink {
+        position: absolute;
+        color: black;
+        font-size: 20px;
+        top: 90px;
+        left: 30px;
+        cursor: pointer;
+    } 
+
+    div#underSettings {
+        position: absolute;
+        display: block;
+        background-color: var(--lblue);
+        width: 250px;
+        padding: 10px 0 597px 0;
+       
+        border-radius: 20px;
+    } 
+  
+    /* TASKS */
+
+    #mainStats {
+        margin:20px auto 0 4%;
+        background-color: var(--dpurple);
+        padding: 0px;
+        width: 1100px;
+        display: inline-flex;
+    }
+    
+    h1#mainStatsTitle {
+        color: var(--secondTextColor);
+        margin: 40px 0 0 80px;
+        font-size: 37px;
+        font-family: arial;
+    }
+    
+    div#statsBtnsLeft {
+        padding: 6px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    img#createTask {
+        width: 20px;
+    }
+
+    img#remakeTaskIcon {
+        width: 27px;
+    }
+
+    img#trashIcon {
+        width: 28px;
+    }
+
+    div.taskNavBtns {
+        margin: 7px;
+        cursor: pointer;
+    }
+
+    h2.taskSubtitle {
+        font-size: 32px;
+        color: var(--secondTextColor);
+        margin: 40px 0 0 80px;
+        font-family: arial;
+    }
+
+    div#statsBtnsRight {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 0 0 15%;
+    }
+
+    p.tasksRightText {
+        padding: 6px;
+        font-size: 19px;
+        margin: 0;
+        font-family: arial;
+    }
+
+    p#allTasksText {
+    
+    }
+
+    p#unmadeTasksTetx {
+
+    }
+
+    p#madeTasksText {
+
+    }
+
+    div#checkboxes {
+        display: inline-flex;
+        width: 340px;
+    }
+
+    .tasksLabel {
+        font-size: 20px;
+        font-family: arial;
+        padding: 10px;
+    }
+
+    div#showedTasks {
+        background-color: black;
+    }
+
+    div#createTaskDiv {
+        position: absolute;
+        margin: 10% 0 0 27%;
+        background-color: var(--dpurple);
+        padding: 70px;
+        border-radius: 40px;
+    }
+
+    h1#createTaskTitle {
+        font-family: arial;
+        font-size: 30px;
+        color: var(--textColor);
+    }
+
+    label#newTaskTitleLabel {
+
+    }
+
+    input#newTaskTitleInput {
+
+    }
+
+    label#newTaskContentLabel {
+        
+    }
+
+    textarea#newTaskContentText {
+        padding: 0 0 100px 0;
+        width: 600px;
+    }
+
+
+}

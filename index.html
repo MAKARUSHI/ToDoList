@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS-CODE/style.css">
+    <script src="JS-CODE/script.js"></script>
+    <script src="JS-CODE/usernamesPasswords.js"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="logInDiv">
+            <label id="logUsernameLabel" for="logInUsername">TYPE YOUR USERNAME</label>
+            <br>
+            <input type="text" id="logInUsername" name="username">
+            <p id="errorText4">Incorect Username</p>
+            <br>
+
+            <label id="logPasswordLabel" for="logInPassword">TYPE YOUR PASSWORD</label>
+            <br>
+            <input type="password" id="logInPassword" name="password">
+            <span id="togglePassword">
+                <img id="togglePasswordImg" src="IMAGES/ICONS/hideEye.png" alt="Toggle Password">
+            </span>
+            <p id="errorText3">Incorect password</p>
+            <br>
+            <button id="btnToLogIn">Log In</button>
+            <button id="btnToRegister">REGISTER</button>
+            <br>
+        </div>
+
+        <div id="registerDiv">
+            <label id="registerUsernameLabel" for="registerUsername" placeholder="username must have at least 5 characters.">REGISTER USERNAME</label>
+            <br>
+            <input type="text" id="registerUsername">
+            <p id="errorText">username must have at least 5 characters.</p>
+            <br>
+
+            <label id="registerPasswordLabel" for="registerPassword">REGISTER PASSWORD</label>
+            <br>
+            <input type="password" id="registerPassword">
+            <span id="togglePassword">
+                <img id="toggle1PasswordImg" src="IMAGES/ICONS/hideEye.png" alt="Toggle Password">
+            </span>
+            <p id="errorText1">password must have at least 8 characters.</p>
+            <br>
+
+            <label id="register1PasswordLabel" for="register1Password">RETYPE PASSWORD</label>
+            <br>
+            <input type="password" id="register1Password">
+            <span id="togglePassword">
+                <img id="toggle2PasswordImg" src="IMAGES/ICONS/hideEye.png" alt="Toggle Password">
+            </span>
+            <p id="errorText2">passwords must be same.</p>
+            <br>
+
+            <button id="makeNewUser">FINISH</button>
+            <button id="btnShowLogIn">Log In</button>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
