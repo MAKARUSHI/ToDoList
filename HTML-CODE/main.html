@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../CSS-CODE/style.css">
-    <script src="../JS-CODE/script.js"></script>
-    <script src="../JS-CODE/usernamesPasswords.js"></script>
+    <script type="module" src="../JS-CODE/script.js"></script>
+    <script type="module" src="../JS-CODE/usernamesPasswords.js"></script>
     <title id="mainPageTitle">Welcome</title>
 </head>
 <body>
+    <div id="sideBtns">
+        <div id="profileIconDiv">
+            <img id="profileIcon" src="../IMAGES/ICONS/profile.png" alt="profile icon">
+        </div>
+
+        <div id="settingsIconDiv">
+            <img id="settingsIcon" src="../IMAGES/ICONS/settings.png" alt="settings icon">
+        </div>
+    </div>
+
+    <div id="settings">
+        <div id="underSettings"></div>
+            <a href="main.html">
+                <img id="settingsMainLogo" src="../IMAGES/ICONS/mainLogo.png" alt="Logo">
+            </a>
+
+            <p id="settingsLink">Account</p>
+        </div>
+    </div>
+
+
     <div class="mainContainer" id="mainContainer">   
         <nav>
             <hr id="navLine">
@@ -24,24 +45,21 @@
             </div>
             <hr id="navLine">
         </nav>
-    
+        
         <section>
-            
-            <h1 id="mainStatsTitle">Welcome </h1>
-
-            <h2 class="taskSubtitle">Your tasks</h2>
+            <h1 id="mainStatsTitle">Welcome</h1>
 
             <div id="mainStats">
                 <div id="statsBtnsLeft">
                     <div class="taskNavBtns" id="plusIconDiv">
                         <img id="createTaskIcon" src="../IMAGES/ICONS/plus.png" alt="Plus">
                     </div>
-                    <div class="taskNavBtns" id="remakeIconDiv">
+                    <!-- <div class="taskNavBtns" id="remakeIconDiv">
                         <img id="remakeTaskIcon" src="../IMAGES/ICONS/remake.png" alt="Remake">
                     </div>
                     <div class="taskNavBtns" id="trashIconDiv">
                         <img id="trashIcon" src="../IMAGES/ICONS/trashCan.png" alt="Trash">
-                    </div>
+                    </div> -->
                     <div id="checkboxes">
                         <label class="tasksLabel" for="">All tasks:</label>
                         <input type="checkbox" name="showAllTasks" id="">
@@ -64,35 +82,25 @@
                 <label id="newTaskTitleLabel" for="newTaskTitleLabel">Task title</label>
                 <br>
                 <input id="newTaskTitleInput" type="text" name="newTaskTitle">
+                <p id="errorText5">Title must be entered</p>
                 <br>
                 <label id="newTaskContentLabel" for="newTaskContent">Content</label>
                 <br>
-                <textarea id="newTaskContentText" type="text" name="newTaskContent">
+                
+                <textarea id="newTaskContentText" type="text" name="newTaskContent"></textarea>
+                <br>
+                <button id="createTaskBtn">Create</button>
+                <button id="cancelTaskBtn">Cancel</button>
+                
             </div>
 
             <div id="showedTasks"></div>
+
+            
         </section>
     </div>
 
-    <div id="sideBtns">
-        <div id="profileIconDiv">
-            <img id="profileIcon" src="../IMAGES/ICONS/profile.png" alt="profile icon">
-        </div>
-
-        <div id="settingsIconDiv">
-            <img id="settingsIcon" src="../IMAGES/ICONS/settings.png" alt="settings icon">
-        </div>
-    </div>
-
-    <div id="settings">
-        <div id="underSettings"></div>
-            <a href="main.html">
-                <img id="settingsMainLogo" src="../IMAGES/ICONS/mainLogo.png" alt="Logo">
-            </a>
-
-            <p id="settingsLink">Account</p>
-        </div>
-    </div>
+    
 
     
         

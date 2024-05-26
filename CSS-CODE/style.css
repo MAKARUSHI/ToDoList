@@ -52,8 +52,10 @@
 
     div#logInDiv {
         display: block;
-        position: absolute;
-        margin: 10% 0 0 19%;
+        position: relative;
+        position: fixed;
+        width: 380px;
+        margin: 220px 0 0 350px;
         background-color: var(--dpurple);
         padding: 60px;
         border-radius: 40px;
@@ -70,10 +72,12 @@
 
     div#registerDiv {
         display: none;
-        position: absolute;
-        margin: 10% 0 0 27%;
+        position: relative;
+        position: fixed;
+        width: 380px;
+        margin: 20% 0 0 25%;;
         background-color: var(--dpurple);
-        padding: 70px;
+        padding: 60px;
         border-radius: 40px;
     }
 
@@ -104,7 +108,8 @@
 
     #makeNewUser, #btnToRegister, 
     #btnToLogIn, #btnToShowLogIn, 
-    #btnShowLogIn{
+    #btnShowLogIn, #cancelTaskBtn, 
+    #createTaskBtn{
         font-size: 17px;
         font-weight: 600;
         padding: 5px;
@@ -116,9 +121,10 @@
     }
 
     #errorText, #errorText1, #errorText2, 
-    #errorText3, #errorText4 {
+    #errorText3, #errorText4, #errorText5 {
         color: var(--errorText);
-        margin-top: -9px;
+        margin-top: -5px;
+        margin-bottom: 5px;
         display: none;
     }
 
@@ -229,6 +235,7 @@
         padding: 0px;
         width: 1100px;
         display: inline-flex;
+        border-radius: 20px 20px 0 0;
     }
     
     h1#mainStatsTitle {
@@ -248,24 +255,9 @@
         width: 20px;
     }
 
-    img#remakeTaskIcon {
-        width: 27px;
-    }
-
-    img#trashIcon {
-        width: 28px;
-    }
-
     div.taskNavBtns {
         margin: 7px;
         cursor: pointer;
-    }
-
-    h2.taskSubtitle {
-        font-size: 32px;
-        color: var(--secondTextColor);
-        margin: 40px 0 0 80px;
-        font-family: arial;
     }
 
     div#statsBtnsRight {
@@ -305,38 +297,81 @@
     }
 
     div#showedTasks {
-        background-color: black;
+        background-color: var(--dpurple);
+        width: 1100px;
+        margin: 0 auto 0 4%;
+        padding: 0px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .task {
+        background-color: var(--lpurple);
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .task span {
+        margin-bottom: 8px;
+        font-size: 19px;
+    }
+    
+    .task .content {
+        color: var(--textColor);
     }
 
     div#createTaskDiv {
+        display: none;
         position: absolute;
-        margin: 10% 0 0 27%;
+        position: fixed;
+        left: 35%;
+        top: 20%;
         background-color: var(--dpurple);
-        padding: 70px;
+        padding: 30px;
         border-radius: 40px;
     }
 
     h1#createTaskTitle {
+        margin: 0 0 10px 0;
         font-family: arial;
         font-size: 30px;
         color: var(--textColor);
     }
 
-    label#newTaskTitleLabel {
-
+    label#newTaskTitleLabel, label#newTaskContentLabel {
+        font-size: 22px;
+        font-family: arial;
+        color: var(--textColor);
+        font-weight: 650;
     }
 
     input#newTaskTitleInput {
-
-    }
-
-    label#newTaskContentLabel {
-        
+        height: 20px;
+        width: 500px;
+        margin-bottom: 11px;
     }
 
     textarea#newTaskContentText {
-        padding: 0 0 100px 0;
-        width: 600px;
+        height: 200px;
+        width: 500px;
+        resize: none;
+    }
+
+    img.deleteTaskIcon {
+        position: relative;
+        cursor: pointer;
+        margin: 0px 0 0 1050px;
+        width: 24px;
+    }
+
+    img.renameTaskIcon {
+        position: relative;
+        cursor: pointer;
+        margin: 0px 0 0 1050px;
+        width: 24px;
     }
 
 
