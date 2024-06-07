@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // USERS DATA
     let usernamesPasswords = JSON.parse(localStorage.getItem("usernamesPasswords")) || [
-        { username: "batman", password: "iAmBatman" },
+        { username: "urban", password: "123456789" },
         { username: "majda", password: "Medobuba13" },
-        { username: "melisa", password: "babatona" }
+        { username: "melisa", password: "987654321" }
     ];
 
     // VARIABLES
@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const errorText5 = document.getElementById('errorText5');
 
     let currentTaskIndex = -1;
+
+    // PROFILE DIV
+
+    const profileMainDiv = document.getElementById("profileMainDiv");
+    const mainProfileIcon = document.getElementById("mainIcon");
+    const profileIcon = document.getElementById("profileIcon");
+
 
     // Load tasks from local storage when the page loads
     if (window.location.href.includes("index.html")) {
@@ -221,6 +228,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 settings.style.display = (settingsStyle.display === 'none') ? 'block' : 'none';
             }
         }
+
+        if (profileMainDiv) {
+            const profileMainDivStyle = window.getComputedStyle(profileMainDiv);
+
+            mainProfileIcon.addEventListener('click', toggleProfileVisibility);
+            profileIcon.addEventListener('click', toggleProfileVisibility);
+
+            function toggleProfileVisibility() {
+                profileMainDiv.style.dispylay = (profileMainDivStyle.display === 'none') ? 'block' : 'none';
+            }
+        }
+
+
     } else if (window.location.href.includes("calendar.html")) {
         // CALENDAR PAGE
         var calendarEl = document.getElementById('calendar');

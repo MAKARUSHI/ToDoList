@@ -374,5 +374,25 @@
         width: 24px;
     }
 
+    div#profileMainDiv {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
 
+    img#mainIcon {
+        width: 80px;
+        margin: 20px;
+    }
+
+    div#sideProfileBtns {
+        position: absolute;
+        display: block;
+        background-color: var(--lblue);
+        width: 250px;
+        padding: 10px 0 597px 0;
+        border-radius: 20px;
+    }
 }
